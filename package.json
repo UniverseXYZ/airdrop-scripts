@@ -1,0 +1,50 @@
+{
+  "name": "poly-owners",
+  "version": "1.0.0",
+  "description": "script to get current owners of polymorphs",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx ts-node index.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@types/node": "^14.14.2",
+    "cross-fetch": "^3.1.4",
+    "ethers": "^5.0.19",
+    "graphql": "^15.4.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "typescript": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/preset-env": "7.12.1",
+    "@types/lodash": "^4.14.170",
+    "@typescript-eslint/parser": "^4.5.0",
+    "dotenv": "8.2.0",
+    "eslint": "7.12.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-flowtype": "5.2.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "pretty-quick": "3.1.0",
+    "ts-node": "9.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "sourceMap": true
+  }
+}
