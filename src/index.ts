@@ -3,8 +3,6 @@ import fetch from "cross-fetch";
 import { createWriteStream } from "fs";
 import * as _ from "lodash";
 
-// import { useQuery, gql, NetworkStatus } from "@apollo/client";
-
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: new HttpLink({
@@ -33,14 +31,14 @@ async function getData() {
   const totalTokens = 9999;
   let lastID = 0;
   let total = 0;
-  let users = [];
+  let users: any = [];
   while (lastID < totalTokens) {
     const { data } = await client.query({
       query: SCRIPT,
       variables: { lastID: String(lastID) },
     });
 
-    data.tokens.forEach((token) => {
+    data.tokens.forEach((token: any) => {
       users.push(token.owner.id);
       total++;
       lastID = token.id;
