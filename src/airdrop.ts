@@ -55,7 +55,7 @@ function saveFile(users: Map<string, BigNumber>) {
   file.write("[");
   users.forEach((value, key) => {
     file.write(
-      `{"account": "${key}", "amount": "${value.toString()}"},` + "\n"
+      `{"address": "${key}", "earnings": "${value.toString()}"},` + "\n"
     );
   });
   file.write("]");
