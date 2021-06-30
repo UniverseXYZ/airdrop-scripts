@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "npx ts-node ./src/airdrop.ts"
+    "airdrop": "npx ts-node ./src/airdrop.ts",
+    "polyowners": "npx ts-node ./src/polyowners.ts"
   },
   "dependencies": {
     "@apollo/client": "^3.2.5",
